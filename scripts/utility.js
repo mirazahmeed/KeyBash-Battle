@@ -8,6 +8,12 @@ function showElementById(elementId) {
     element.classList.remove("hidden");
 }
 
+function getElementTextById(elementId) {
+    const element = document.getElementById(elementId);
+    const text = element.innerText;
+    return text;
+}
+
 function addBackgroundColor(backgroundColor) {
     const element = document.getElementById(backgroundColor);
     element.classList.add("bg-orange-400");
